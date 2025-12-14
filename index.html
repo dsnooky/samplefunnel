@@ -107,6 +107,36 @@
       margin-bottom: 20px;
     }
 
+    .contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.contact-form button {
+  width: 100%;
+  cursor: pointer;
+}.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+
     footer {
       background: #111827;
       color: #9ca3af;
@@ -219,6 +249,30 @@
     <p>Message me now for a free consultation.</p>
     <a href="https://www.facebook.com/share/1BdxuYpZeB/" class="btn">Message Me Now</a>
   </div>
+
+  <!-- CONTACT FORM -->
+<section id="contact">
+  <div class="container">
+    <h2>Get a Free Website Consultation</h2>
+    <p style="text-align:center; margin-bottom:30px;">
+      Fill out the form below and I’ll get back to you as soon as possible.
+    </p>
+
+    <form action="https://formspree.io/f/YOURFORMID" method="POST" class="contact-form">
+      
+      <div class="grid">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <input type="text" name="subject" placeholder="Business / Website Type" required>
+
+      <textarea name="message" rows="6" placeholder="Tell me about your website needs..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
